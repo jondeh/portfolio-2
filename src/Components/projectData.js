@@ -2,6 +2,8 @@ import React from 'react';
 import gameRyanPic from '../img/gameryan-screenshot.png';
 import settlersPic from '../img/settlers-screenshot.png';
 import vinPic from '../img/vindermere-screenshot.png';
+import chordFinder1 from '../img/chordFinder1.png';
+import chordFinder2 from '../img/chordFinder2.png';
 import { SiJavascript } from 'react-icons/si';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaReact } from 'react-icons/fa';
@@ -33,7 +35,7 @@ export const projects = [
         title: "Settlers of Catan",
         url: null,
         github: "https://github.com/Aposhian-Dehlin-Buford/settlers",
-        images: [gameRyanPic, settlersPic, vinPic],
+        images: [settlersPic, gameRyanPic, vinPic],
         technologies: [REACT, NODE, SQL],
         techs: ["ReactJS", "Node.js", "PostGreSQL", "HTML", "CSS", "Express", "Massive", "BCrypt", "Socket.io", "GreenSock", "Photoshop"],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
@@ -42,7 +44,7 @@ export const projects = [
         title: "Vindermere",
         url: "http://vindermere.com/",
         github: "https://github.com/Arcade-Game/dungeon-crawler",
-        images: [],
+        images: [vinPic],
         technologies: [REACT, NODE, MONGO, SQL],
         techs: ["ReactJS", "Node.js", "MongoDB", "PostGreSQL", "HTML", "CSS", "Express", "Massive", "BCrypt", "GreenSock", "Photoshop"],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -51,7 +53,7 @@ export const projects = [
         title: "Sudoku",
         url: "vindermere.com",
         github: "https://github.com/jondeh/gameRyan.com",
-        images: [],
+        images: [gameRyanPic],
         technologies: [REACT, NODE, SQL],
         techs: ["ReactJS", "Node.js", "PostGreSQL", "HTML", "CSS", "Express", "Massive", "BCrypt"],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
@@ -60,7 +62,7 @@ export const projects = [
         title: "Chord Finder",
         url: null,
         github: "https://github.com/jondeh/no-db",
-        images: [],
+        images: [chordFinder1, chordFinder2],
         technologies: [REACT, NODE, SQL],
         techs: ["ReactJS", "Node.js", "PostGreSQL", "HTML", "CSS", "Express", "Massive", "BCrypt"],
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
