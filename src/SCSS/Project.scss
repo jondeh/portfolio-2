@@ -1,0 +1,223 @@
+@import './Variables.scss';
+
+.project-container {
+    min-height: 93vh;
+    width: 96%;
+    // border: 1px solid black;
+    background: $project;
+    padding: .7vh;
+    margin-bottom: 5vh;
+    position: relative;
+}
+
+.project-title {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+    padding: 5px;
+    color: $purpleShadow1;
+    a {
+        display: flex;
+    }
+}
+
+.project-img {
+    min-height: 30vh;
+    max-height: 30vh;
+    min-width: 100%;
+    max-width: 100%;
+    background: white;
+    margin-bottom: 8px;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 7vh;
+        color: $offWhite;
+        background: $onyx3;
+        min-height: 30vh;
+        max-height: 30vh;
+        width: 15%;
+        animation: overlayAnimation;
+        animation-duration: .08s;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0;
+        animation-direction: forwards;
+        animation-iteration-count: 1;
+        animation-fill-mode: both;
+        animation-play-state: running;
+    }
+}
+
+@keyframes overlayAnimation {
+    0% {
+        background: $onyx7;
+    }
+
+    25% {
+        background: $onyx6;
+    }
+
+    50% {
+        background: $onyx5;
+    }
+
+    75% {
+        background: $onyx4;
+    }
+
+    100% {
+        background: $onyx3;
+    }
+}
+
+.project-tech-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    color: $purpleShadow1;
+}
+
+.project-icon {
+    font-size: 30px;
+}
+
+.project-description {
+    text-align: left;
+    padding: .5vh;
+    background: transparent;
+    margin: 10px 0;
+    max-height: 28vh;
+    overflow: auto;
+}
+
+.project-techs {
+    position: absolute;
+    bottom: .7vh;
+    right: .7vh;
+    width: calc(100% - 1.4vh);
+    h4 {
+        font-family: 'Gudea', sans-serif;
+        margin: 1vh 0;
+    }
+}
+
+.p-techs {
+    
+    margin-top: 5px;
+    margin-left: 0;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    ul {
+        font-family: 'Gudea', sans-serif;
+        background: $ptechs;
+        margin: .5px;
+        color: $purpleShadow1;
+        padding: 5px 2px 5px 2px;
+        text-align: center;
+        &:hover {
+            animation: pTechAnimation;
+            animation-duration: .5s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0;
+            animation-direction: forwards;
+            animation-iteration-count: 1;
+            animation-fill-mode: both;
+            animation-play-state: running;
+        }
+    }
+}
+
+@keyframes pTechAnimation {
+    0% {
+        background: $background1;
+    }
+
+    12% {
+        background: $background2;
+    }
+
+    25% {
+        background: $background3;
+    }
+
+    37% {
+        background: $background4;
+    }
+
+    50% {
+        background: $background5;
+    }
+
+    62% {
+        background: $background6;
+    }
+
+    75% {
+        background: $background7;
+    }
+
+    87% {
+        background: $background8;
+    }
+
+    100% {
+        background: $background9;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .project-container {
+        margin-left: 2%;
+        margin-right: 2%;
+        min-height: 89vh;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .project-img {
+        min-height: 30vh;
+        max-height: 30vh;
+        min-width: 100%;
+        max-width: 100%;
+        background: white;
+        margin-bottom: 8px;
+        background-size: 100%;
+        background-position: center;
+        display: flex;
+        justify-content: space-between;
+        div {
+            display: none;
+        }
+        &:hover {
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 7vh;
+                color: $offWhite;
+                background: $onyx3;
+                min-height: 30vh;
+                max-height: 30vh;
+                width: 15%;
+                animation: overlayAnimation;
+                animation-duration: .15s;
+                animation-timing-function: ease-in-out;
+                animation-delay: 0;
+                animation-direction: forwards;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+                animation-play-state: running;
+            }
+        }
+    }
+}

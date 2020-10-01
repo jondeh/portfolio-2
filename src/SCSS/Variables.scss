@@ -1,0 +1,95 @@
+$base: grey;
+$greenMountain: #3d7c47;
+$blueMountain: #09868b;
+$lightBlueBackdrop: #76c1d4;
+$offWhite: #eeeeee;
+$sandTan: #e1b382;
+$sandTanShadow: #c89666;
+
+
+$greyBlueLeaf1: #4f5f76;
+$greyBlueLeaf2: #4f5f76b7;
+$greyBlueLeaf3: #4f5f7680;
+
+$purpleShadow1: #091f36;
+$purpleShadow2: #091f36ce;
+$purpleShadow3: #091f3683;
+$purpleShadow4: #091f3644;
+$purpleShadow5: #091f361f;
+
+$shadow1: #12343b;
+$shadow2: #12343bb9;
+$shadow3: #12343b7c;
+
+$bluePopsicle1: #0f2862;
+$bluePopsicle2: #0f2862bb;
+$bluePopsicle3: #0f286283;
+
+$otherBlue: #2d545e80;
+$otherBlue2: #2d545eda;
+$otherBlue3: #2d545e;
+
+$roseGold: #bd8c7d;
+$roseGold2: #bd8c7dce;
+$roseGold3: #bd8c7d9d;
+$softGold: #d1bfa7;
+$softGold2: #d1bfa7cc;
+$softGold3: #d1bfa778;
+$silver: #8e8e90;
+$silver2: #8e8e90d2;
+$silver3: #8e8e9044;
+$onyx: #49494b;
+$onyx2: #49494bc5;
+$onyx3: #49494b44;
+$onyx4: #49494b36;
+$onyx5: #49494b2f;
+$onyx6: #49494b17;
+$onyx7: #49494b09;
+
+$header: $otherBlue;
+$header: $onyx2;
+
+// $headerMenu: #2d545eca;
+$headerMenu: $onyx2;
+$headerMenuButtons: $onyx3;
+
+// $project: lightgrey;
+// $project: #f7f7f7;
+$project: $silver3;
+$skillsContainer: $project;
+
+$background: white;
+
+$background1: linear-gradient(to bottom right, $onyx3, $purpleShadow4 0%, $onyx3, );
+$background2: linear-gradient(to bottom right, $onyx3, $purpleShadow4 12%, $onyx3, );
+$background3: linear-gradient(to bottom right, $onyx3, $purpleShadow4 25%, $onyx3, );
+$background4: linear-gradient(to bottom right, $onyx3, $purpleShadow4 37%, $onyx3, );
+$background5: linear-gradient(to bottom right, $onyx3, $purpleShadow4 50%, $onyx3, );
+$background6: linear-gradient(to bottom right, $onyx3, $purpleShadow4 62%, $onyx3, );
+$background7: linear-gradient(to bottom right, $onyx3, $purpleShadow4 75%, $onyx3, );
+$background8: linear-gradient(to bottom right, $onyx3, $purpleShadow4 87%, $onyx3, );
+$background9: linear-gradient(to bottom right, $onyx3, $purpleShadow4 100%, $onyx3, );
+
+// $background1: linear-gradient(to bottom right, $shadow2, $otherBlue 0%, $shadow2, );
+// $background2: linear-gradient(to bottom right, $shadow2, $otherBlue 12%, $shadow2, );
+// $background3: linear-gradient(to bottom right, $shadow2, $otherBlue 25%, $shadow2, );
+// $background4: linear-gradient(to bottom right, $shadow2, $otherBlue 37%, $shadow2, );
+// $background5: linear-gradient(to bottom right, $shadow2, $otherBlue 50%, $shadow2, );
+// $background6: linear-gradient(to bottom right, $shadow2, $otherBlue 62%, $shadow2, );
+// $background7: linear-gradient(to bottom right, $shadow2, $otherBlue 75%, $shadow2, );
+// $background8: linear-gradient(to bottom right, $shadow2, $otherBlue 87%, $shadow2, );
+// $background9: linear-gradient(to bottom right, $shadow2, $otherBlue 100%, $shadow2, );
+
+
+$ptechs: rgba(128, 128, 128, 0.534);
+$ptechs: $onyx3;
+
+// $ptech0: rgba(128, 128, 128, 0.602);
+// $ptech50: rgba(128, 128, 128, 0.739);
+// $ptech100: rgba(128, 128, 128, 0.794);
+
+$ptech0: $background1;
+$ptech50: $background2;
+$ptech100: $background3;
+
+

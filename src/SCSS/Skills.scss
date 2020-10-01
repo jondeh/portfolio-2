@@ -1,0 +1,114 @@
+@import './Variables.scss';
+
+.skills-container {
+    display: inline-block;
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100vh;
+    position: relative;
+    padding-top: 5vh;
+    background: rgba(255, 255, 255, 0.198);
+}
+
+.skills-header {
+    // height: 10vh;
+    background: transparent;
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    color: black;
+}
+
+.skills-grid {
+    position: absolute;
+    bottom: 0;
+    height: 90vh;
+    width: 100%;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 10px;
+    // border: 1px solid grey;
+    div {
+        // border: 1px solid grey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 50px;
+        h3 {
+            font-size: 16px;
+            color: white;
+            color: black;
+        }
+        
+        .react-icon {
+            background: transparent;
+            color: white;
+            color: black;
+            &:hover {
+                animation: hoverAnimation;
+                animation-duration: .25s;
+                animation-timing-function: ease-out;
+                animation-delay: 0;
+                animation-direction: alternate;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+                animation-play-state: running;
+            }
+        }
+
+
+    }
+}
+
+@keyframes hoverAnimation {
+    0% {
+        color: $purpleShadow1;
+    }
+
+    50% {
+        color: $purpleShadow2;
+    }
+    
+    100% {
+        color: $purpleShadow3;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .skills-container {
+        padding-top: 7.5vh;
+    }
+
+    .skills-header {
+        font-size: 2.7vh;
+    }
+
+    .skills-grid {
+        div {
+            font-size: 8.1vh;
+            h3 {
+                font-size: 2.2vh;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .skills-grid {
+        div {
+            font-size: 8vh;
+            h3 {
+                font-size: 2.5vh;
+            }
+        }
+        grid-template-columns: repeat(4, auto);
+    }
+}
+
