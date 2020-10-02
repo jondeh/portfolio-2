@@ -28,10 +28,11 @@
     max-height: 30vh;
     min-width: 100%;
     max-width: 100%;
-    background: white;
+    background: black;
     margin-bottom: 8px;
     background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     div {
