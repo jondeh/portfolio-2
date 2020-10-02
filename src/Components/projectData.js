@@ -16,6 +16,13 @@ import vin7 from '../img/vindermere/vindermere-editor.png';
 import vin8 from '../img/vindermere/vindermere-items.png';
 import vin9 from '../img/vindermere/vindermere-market.png';
 
+import guitar1 from '../img/chordFinder/guitar1.png';
+import guitar2 from '../img/chordFinder/guitar2.png';
+import guitar3 from '../img/chordFinder/guitar3.png';
+import guitar4 from '../img/chordFinder/guitar4.png';
+import guitar5 from '../img/chordFinder/guitar5.png';
+import guitar6 from '../img/chordFinder/guitar6.png';
+
 import { SiJavascript } from 'react-icons/si';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaReact } from 'react-icons/fa';
@@ -56,7 +63,7 @@ export const projects = [
         title: "Vindermere",
         url: "http://vindermere.com/",
         github: "https://github.com/Arcade-Game/dungeon-crawler",
-        images: [vin1, vin2, vin3, vin4, vin5, vin6, vin7, vin8, vin9],
+        images: [vin4, vin1, vin2, vin3, vin5, vin6, vin7, vin8, vin9],
         technologies: [REACT, NODE, MONGO, SQL],
         techs: ["ReactJS", "Node.js", "MongoDB", "PostGreSQL", "HTML", "CSS", "Express", "Massive", "BCrypt", "GreenSock", "Photoshop"],
         description: "Top down, fantasy-style dungeon crawler.  Game engine was built completely from scratch using React.  Game engine retrieves the current map of the user from the Mongo database.  Maps are stored as arrays of arrays of objects, with each object correlating to a tile on the character display.  The 9x9 character display is created with a for loop that starts 4 arrays above the character Y index and ends 4 arrays below the character Y index, and slices from 4 elements left of the character X index to 4 elements right of the character X index, rendering a smaller 9x9 grid that updates when the arrows keys (or WASD) change the character X and Y indexes.  Minimap in the corner displays tiles where explored === true, which happens when tiles are rendered in the character view.  There are more than 12 terrain types, 4 elevations, 4 tile modifiers (i.e. mist covering the tile making it hard to see), and 12 tile objects such as monster, chest, and teleporter.  Each of these different categories can exist on the others (i.e, a chest can be on a cliff with rough terrain, underneath mist).  There is also a pushable boulder, which acts as the third elevation.  Climbing onto it from the second elevation opens up the fourth elevation, which can only be moved onto if you are already standing on a boulder.  Boulders can be pushed onto different terrain types, with different effects.  Pushing a boulder into water creates a permanent bridge, while pushing a boulder into lava creates a temporary bridge for one turn.  Pushing a boulder into a teleporter transports the rock to a a different point on the map, and destroys the teleporter.  Pushing a boulder from atop a cliff onto a monster kills the monster and earns 15 experience points. Each unique terrain has a different effect.   The combat view is toggled when the character steps on a tile inhabited by a monster.  The character and monster alternate turns choosing attack moves.  The moves available to a character are determined by the weapon that is equipped (or not equipped).  Each move alters the player stats uniquely (one move might raise attack for one turn but lower defense for one turn, etc.).  Combat ends when character or monster HP <= 0.  Experience points are earned from defeating monsters, crushing monsters, finishing quests, and completing dungeons.  Your level when you complete a dungeon is then converted into 'Honor' back in the town, which accumulates for a player to earn 'Titles' from 'Peasant' to 'King'.  Each player's progress is stored in a SQL database hosted by Heroku.  We practiced continual production with this project, making sure we published a working version daily."
@@ -74,10 +81,10 @@ export const projects = [
         title: "Chord Finder",
         url: null,
         github: "https://github.com/jondeh/no-db",
-        images: [],
+        images: [guitar6, guitar1, guitar3, guitar4, guitar5, ],
         technologies: [REACT, NODE, SQL],
         techs: ["ReactJS", "Node.js", "PostGreSQL", "HTML", "CSS", "Express", "Massive", "BCrypt"],
-        description: "Virtual guitar fretboard, made initially as a no-database project, later updated to include a database.  Connects to a public API for a database containing the combinations of notes pressed on a guitar.  Chord Finder records the placement of the notes that you click on the virtual fretboard, and retrieves the exact chord from the database, letting you discover new chords to play, and letting you store your favorites in a SQL database.  Fretboard was created with overlapping CSS Grids.  This is the first project I ever built."
+        description: "Virtual guitar fretboard, made initially as a no-database project, later updated to include a database.  Connects to a public API for a database containing the combinations of notes pressed on a guitar.  Chord Finder records the placement of the notes that you click on the virtual fretboard, and retrieves the exact chord from the database, letting you discover new chords to play, and letting you store your favorites in a SQL database.  Fretboard was created with overlapping CSS Grids.  Styling is conditional as well.  Choose between six different stylings for the fretboard, and two different themes for the website. This is the first project I ever built."
     },
     {
         title: "Pathfinding Visualizer",
