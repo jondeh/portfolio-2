@@ -11,7 +11,7 @@ const Title = () => {
     return (
         <div className="title-container">
             <h1>Jonathon Dehlin</h1>
-            <h2>Software Developer</h2>
+            <h2>Web Developer</h2>
         </div>
     )
 }
