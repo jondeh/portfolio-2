@@ -7,6 +7,10 @@ const Header = () => {
     const {push} = useHistory()
     const [isMenuToggle, setIsMenuToggle] = useState(false);
 
+    const handleInitials = () => {
+        push('/')
+    }
+
     const handleMenuToggle = () => {
         setIsMenuToggle(!isMenuToggle)
     }
@@ -39,6 +43,7 @@ const Header = () => {
 
     return (
         <div className="header-container">
+        <div className="header-initials" onClick={handleInitials}></div>
             <ImMenu className="menu-icon" onClick={handleMenuToggle} />
             <div className="web-menu">
                 <button onClick={handleButtonAbout}>ABOUT</button>

@@ -14,8 +14,8 @@
     padding: 10vh 5vh 5vh 5vh;
     h1 {
         font-family: 'Spartan', sans-serif;
-        // background: linear-gradient($purpleShadow1, $otherBlue);
-        background: linear-gradient(rgb(143, 27, 27), yellow);
+        background: linear-gradient($purpleShadow1, $otherBlue);
+        // background: linear-gradient(rgb(143, 27, 27), yellow);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

@@ -43,6 +43,9 @@
         align-items: center;
         display: flex;
         justify-content: space-evenly;
+        span {
+            margin-right: 10px;
+        }
     }
 }
 
