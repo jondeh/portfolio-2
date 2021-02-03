@@ -88,6 +88,30 @@
 
 .project-icon {
     font-size: 30px;
+    &:hover {
+        animation: hoverAnimation;
+                animation-duration: .25s;
+                animation-timing-function: ease-out;
+                animation-delay: 0;
+                animation-direction: alternate;
+                animation-iteration-count: 1;
+                animation-fill-mode: both;
+                animation-play-state: running;
+    }
+}
+
+@keyframes hoverAnimation {
+    0% {
+        color: $purpleShadow1;
+    }
+
+    50% {
+        color: $purpleShadow2;
+    }
+    
+    100% {
+        color: $purpleShadow3;
+    }
 }
 
 .project-description {

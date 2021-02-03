@@ -23,6 +23,20 @@ import guitar4 from '../img/chordFinder/guitar4.png';
 import guitar5 from '../img/chordFinder/guitar5.png';
 import guitar6 from '../img/chordFinder/guitar6.png';
 
+import go1 from '../img/go/go-portfolio-1.png';
+import go2 from '../img/go/go-portfolio-2.png';
+import go3 from '../img/go/go-portfolio-3.png';
+import go4 from '../img/go/go-portfolio-4.png';
+
+import sudoku1 from '../img/sudoku/sudoku-portfolio-1.png'
+
+import pv1 from '../img/pathfindingVisualizer/pathfinding-visualizer-portfolio-1.png';
+import pv2 from '../img/pathfindingVisualizer/pathfinding-visualizer-portfolio-2.png';
+import pv3 from '../img/pathfindingVisualizer/pathfinding-visualizer-portfolio-3.png';
+import pv4 from '../img/pathfindingVisualizer/pathfinding-visualizer-portfolio-4.png';
+import pv5 from '../img/pathfindingVisualizer/pathfinding-visualizer-portfolio-5.png';
+import pv6 from '../img/pathfindingVisualizer/pathfinding-visualizer-portfolio-6.png';
+
 import { SiJavascript } from 'react-icons/si';
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaReact } from 'react-icons/fa';
@@ -57,7 +71,17 @@ export const projects = [
         images: [settlers1, settlers2, settlers3, settlers4, settlers5],
         technologies: [REACT, NODE, SQL],
         techs: ["ReactJS", "Node.js", "PostGreSQL", "HTML", "CSS", "Express", "Massive", "BCrypt", "Socket.io", "GreenSock", "Photoshop"],
-        description: "Fully playable, responsive web-version of board game Settlers of Catan (Catan Studio).  Styling is done with Sass/Css and animations are done with Greensock. The game is fully functional as per the rules stated on Catan Studio's website.  Socket.io connects the players and updates the game state multiple times per turn to keep players up to date on dice rolls, resources received, trades offered, etc.  Game goes until one player reaches 10 points.  The biggest challenge was working with a hexagonal map.  Each hexagonal tile has six slots each for roads and settlements, and each of those slots needs to know what tiles and slots are adjacent.  With a grid of squares this is simple, but the hexagons changed the equation so that it is not as obvious what tiles are connected in the underlying data.  This was not built for production and I am not associated with Catan Studio."
+        description: "Fully playable, responsive web-version of board game Settlers of Catan (Catan Studio).  Styling is done with Sass/Css and animations are done with Greensock. The game is fully functional as per the rules stated on Catan Studio's website.  Socket.io connects the players and updates the game state multiple times per turn to keep players up to date on dice rolls, resources received, trades offered, etc.  Game goes until one player reaches 10 points.  The biggest challenge was working with a hexagonal map.  Each hexagonal tile has six slots each for roads and settlements, and each of those slots needs to know what tiles and slots are adjacent.  With a grid of squares this is simple, but the hexagons changed the equation so that it is not as obvious what tiles are connected in the underlying data.  This was not built for production and I am not associated with Catan Studio.  First two pictures are of the completed game, the next show how the board took shape during development."
+    },
+    {
+        title: "Go",
+        url: "",
+        github: "",
+        images: [go1, go2, go3, go4],
+        technologies: [REACT, NODE, CSS],
+        techs: [],
+        description: "Complete digital version of the ancient board game Go.  Alternate placing stones on a 19x19 crosshatch board.  Completely surrounding an opponent's stone(s) will remove that stone from the board.  Win by surrounding more of the crosshatches than the opposing player.  Game ends when both players 'pass' a turn.  This version has all of the rules.  The most challenging rule to implement was the rule of 'ko', which states that if you take an opponent's stone, they can't take your stone immediately back if it would result in an identical state of the board as that which was instanced when you took their stone.  I solved this by storing as an array the coordinates of any single stone that is taken.  That array is referenced as an illegal move for one turn, after which it disappears.",
+        
     },
     {
         title: "Vindermere",
@@ -72,7 +96,7 @@ export const projects = [
         title: "Sudoku",
         url: "vindermere.com",
         github: "https://github.com/jondeh/gameRyan.com",
-        images: [],
+        images: [sudoku1],
         technologies: [REACT, NODE, SQL],
         techs: ["ReactJS", "Node.js", "PostGreSQL", "HTML", "CSS", "Express", "Massive", "BCrypt"],
         description: "This was my first full CRUD website.  The sudoku solver algorithm solves any sudoku puzzle where there is only one solution.  For easy puzzles, this means checking every square and filling in the square where there is only one possible number.  Then checking every row, column, and box, and filling in the squares when there is only one square a number can go in that row, column, or box.  The algorithm then moves on to checking for doubles and triples, removing the possible numbers for each square that are disqualified because of the doubles and triples methods.  The algorithm repeats this process until every square is filled.  The generator algorithm retrieves a 'seed' puzzle from the selected difficulty (easy, medium, or hard) from the SQL database.  There are 50 seed puzzles for each difficulty.  Once the seed puzzle is retrieved, the generator algorithm modifies the numbers and rotates the grid one of eight possible directions. These modifications create more than 100,000 possible puzzles.  Selecting a difficult starts the timer which ends when the puzzle is correctly solved.  User's times are stored in the SQL database.  Database was challenging for a first full CRUD website as there were many join statements."
@@ -90,27 +114,27 @@ export const projects = [
         title: "Pathfinding Visualizer",
         url: null,
         github: "github.com",
-        images: [],
+        images: [pv1, pv2, pv3, pv4, pv5, pv6],
         technologies: [REACT, NODE, MONGO],
         techs: ["ReactJS", "Node.js", "MongoDb", "HTML", "CSS", "Express", "Massive", "BCrypt"],
-        description: "Visualize Dijkstra's pathfinding algorithm.  Select a grid-size and a starting point and an ending point.  Draw barriers which the algorithm will have to work around.  The grid then animates to represent how the algorithm searches for the endpoint.  When the endpoint is discovered, the shortest path is animated in a different color."
+        description: "Visualize Dijkstra's pathfinding algorithm.  Select a grid-size and a starting point and an ending point.  Draw barriers which the algorithm will have to work around.  The grid then animates to represent how the algorithm searches for the endpoint.  When the endpoint is discovered, the shortest path is animated in a different color.  "
     },
-    {
-        title: "Paint",
-        url: null,
-        github: "github.com",
-        images: [],
-        technologies: [REACT, NODE, MONGO],
-        techs: ["ReactJS", "Node.js", "MongoDb", "HTML", "CSS", "Express", "Massive", "BCrypt"],
-        description: "A replica of Microsoft Paint, made from scratch with React."
-    },
-    {
-        title: "Map Editor",
-        url: null,
-        github: "https://github.com/jondeh/map-editor",
-        images: [],
-        technologies: [REACT, NODE, MONGO],
-        techs: ["ReactJS", "Node.js", "MongoDb", "HTML", "CSS", "Express", "Massive", "BCrypt"],
-        description: "This is a generic game-map editor.  Three engines currently connect to it.  The first is the dungeon crawler also posted on this portfolio.  The second is a simple side-scroller video game.  The third is for larger grids for a game engine akin to what you will find in Clash of Clans or Tribal Wars.  Select which engine you are building for, and there are a set of pre-selected tiles from which to build a map from.  Or you can build custom tiles which then get added to that engine's database.  When you save the map, it is automatically saved to the correct Mongo database, and can be tested immediately using the selected game engine, or can be retrieved in game.  The biggest challenge was connecting different game engines (all custom engines built by me) so that when one is selected EVERYTHING changes, including the connected database, the engine which is deployed when you 'test', and the object tiles which are accessible."
-    },
+    // {
+    //     title: "Paint",
+    //     url: null,
+    //     github: "github.com",
+    //     images: [],
+    //     technologies: [REACT, NODE, MONGO],
+    //     techs: ["ReactJS", "Node.js", "MongoDb", "HTML", "CSS", "Express", "Massive", "BCrypt"],
+    //     description: "A replica of Microsoft Paint, made from scratch with React."
+    // },
+    // {
+    //     title: "Map Editor",
+    //     url: null,
+    //     github: "https://github.com/jondeh/map-editor",
+    //     images: [],
+    //     technologies: [REACT, NODE, MONGO],
+    //     techs: ["ReactJS", "Node.js", "MongoDb", "HTML", "CSS", "Express", "Massive", "BCrypt"],
+    //     description: "This is a generic game-map editor.  Three engines currently connect to it.  The first is the dungeon crawler also posted on this portfolio.  The second is a simple side-scroller video game.  The third is for larger grids for a game engine akin to what you will find in Clash of Clans or Tribal Wars.  Select which engine you are building for, and there are a set of pre-selected tiles from which to build a map from.  Or you can build custom tiles which then get added to that engine's database.  When you save the map, it is automatically saved to the correct Mongo database, and can be tested immediately using the selected game engine, or can be retrieved in game.  The biggest challenge was connecting different game engines (all custom engines built by me) so that when one is selected EVERYTHING changes, including the connected database, the engine which is deployed when you 'test', and the object tiles which are accessible."
+    // },
 ]
