@@ -1,0 +1,51 @@
+@import './Variables.scss';
+
+.contact-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    a {
+        color: black;
+    }
+}
+
+.github-container {
+    // border: 1px solid black;
+    width: 340px;
+    height: 40px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .github-info {
+        font-size: 22px;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.gh-icon {
+    margin: 0 1vh;
+}
+
+.email-container {
+    // border: 1px solid black;
+    width: 340px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    .email-info {
+        font-size: 22px;
+        align-items: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+.email-icon {
+    margin: 0 1vh;
+}

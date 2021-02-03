@@ -44,7 +44,7 @@ const Header = () => {
                 <button onClick={handleButtonAbout}>ABOUT</button>
                 <button onClick={handleButtonSkills}>SKILLS</button>
                 <button onClick={handleButtonPortfolio}>PROJECTS</button>
-                <button onClick={handleButtonResume}>RESUME</button>
+                {/* <button onClick={handleButtonResume}>RESUME</button> */}
                 <button onClick={handleButtonContact}>CONTACT</button>
             </div>
             {
@@ -52,7 +52,7 @@ const Header = () => {
                 <button onClick={handleButtonAbout}>ABOUT</button>
                 <button onClick={handleButtonSkills}>SKILLS</button>
                 <button onClick={handleButtonPortfolio}>PROJECTS</button>
-                <button onClick={handleButtonResume}>RESUME</button>
+                {/* <button onClick={handleButtonResume}>RESUME</button> */}
                 <button onClick={handleButtonContact}>CONTACT</button>
             </div>
             }

@@ -1,0 +1,43 @@
+@import './Variables.scss';
+
+.bio-container {
+    padding-top: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.bio-img-container {
+    height: 50vh;
+    width: 50vh;
+    margin-bottom: 3vh;
+    background: url('../img/proPic/Profile_Pic.JPG');
+    background-size: 100%;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.bio-summary-container {
+    width: 100%;
+    text-align: left;
+    padding: 1vh;
+    font-size: 21px;
+    // border: 1px solid black;
+}
+
+@media only screen and (min-width: 768px) {
+    .bio-container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 28px;
+    }
+    .bio-img-container {
+        height: 400px;
+        width: 400px;
+    }
+    .bio-summary-container {
+        width: 50%;
+    }
+}
