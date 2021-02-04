@@ -10,7 +10,7 @@ const Bio = () => {
                     <span>Hello World!</span>
                     <br/>
                     <br/>
-                    <span>My name is Jon Dehlin.  I am a web developer who specializes in creating responsive websites full-stack, from the database to the animations on the front-end.
+                    <span>My name is Jon Dehlin.  I am a full-stack web developer who specializes in creating responsive websites, from the database to the front-end animations.
                     <br/>
                     <br/>
                     I write clean code that is scalable and easy to maintain, and work best when surrounded by motivated people who just want to build things and solve problems.

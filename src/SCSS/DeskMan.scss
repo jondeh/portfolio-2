@@ -1,0 +1,145 @@
+@import './Variables.scss';
+
+.desk-man-container {
+    // border: 1px solid black;
+    // transform: scale(.7);
+}
+
+@mixin stars {
+  animation-name: star;
+  animation-duration: (random($ad) + 2000) + ms;
+  // animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  transform-origin: bottom;
+  transform-box: fill-box; 
+}
+
+#upper-left-screen {
+  fill: $comp1;
+}
+#upper-mid-screen {
+  fill: $comp1;
+}
+#upper-right-screen {
+  fill: $comp1;
+}
+#lower-left-screen {
+  fill: $comp1;
+}
+#lower-mid-screen {
+  fill: $comp1;
+}
+#lower-right-screen {
+  fill: $comp1;
+  // fill: rgb(20, 20, 20);
+}
+
+#background-sky {
+  fill: url(#paint0_radial);
+}
+
+#neck {
+  fill: #cf9997;
+}
+
+#head {
+  fill: $head;
+    animation-name: head;
+    animation-duration: 10000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#hand {
+    animation-name: hand;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#shirt-main {
+  fill: $shirt1;
+}
+#shirt-collar {
+  fill: $shirt1;
+}
+#shirt-sleeve {
+  fill: $shirt1;
+}
+
+#Star-1 {
+ @include stars; 
+}#Star-2 {
+ @include stars; 
+}#Star-3 {
+ @include stars; 
+}#Star-4 {
+ @include stars; 
+}#Star-5 {
+ @include stars; 
+}#Star-6 {
+ @include stars; 
+}#Star-7 {
+ @include stars; 
+}#Star-8 {
+ @include stars; 
+}#Star-9 {
+ @include stars; 
+}#Star-10 {
+ @include stars; 
+}#Star-11 {
+ @include stars; 
+}#Star-12 {
+ @include stars; 
+}#Star-13 {
+ @include stars; 
+}#Star-14 {
+ @include stars; 
+}#Star-15 {
+ @include stars; 
+}#Star-16 {
+ @include stars; 
+}
+
+@keyframes star {
+  0% {transform: scale((random(6) + 4) / 10);}
+  100% {transform: scale(1);}
+}
+
+@keyframes head {
+    0% {transform: rotate(0deg);}
+    5% {transform: rotate(5deg);}
+    10% {transform: rotate(10deg);}
+    15% {transform: rotate(10deg);}
+    20% {transform: rotate(10deg);}
+    25% {transform: rotate(10deg);}
+    30% {transform: rotate(10deg);}
+    35% {transform: rotate(10deg);}
+    40% {transform: rotate(5deg);}
+    45% {transform: rotate(0deg);}
+    50% {transform: rotate(0deg);}
+    55% {transform: rotate(0deg);}
+    60% {transform: rotate(0deg);}
+    65% {transform: rotate(-2deg);}
+    70% {transform: rotate(-5deg);}
+    75% {transform: rotate(-5deg);}
+    80% {transform: rotate(-5deg);}
+    85% {transform: rotate(-5deg);}
+    90% {transform: rotate(-2deg);}
+    95% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+  }
+
+  @keyframes hand {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(10deg);}
+    50% {transform: translateY(-3px);}
+    75% {transform: rotate(0deg);}
+    100% {transform: rotate(0deg);}
+  }

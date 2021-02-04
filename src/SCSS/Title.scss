@@ -1,7 +1,7 @@
 @import './Variables.scss';
 
 .title-container {
-    border: 1px solid black;
+    // border: 1px solid black;
     height: 100%;
     width: 100%;
     display: flex;
@@ -11,16 +11,45 @@
     color: $purpleShadow1;
     background: white;
     // font-family: 'Spartan', sans-serif;
-    padding: 10vh 5vh 5vh 5vh;
-    h1 {
+    padding: 10vh 5vh 10vh 5vh;
+    .title-name-true {
+        // border: 1px solid black;
         font-family: 'Spartan', sans-serif;
-        background: linear-gradient($purpleShadow1, $otherBlue);
+        font-weight: bold;
+        background: linear-gradient(black, $otherBlue);
         // background: linear-gradient(rgb(143, 27, 27), yellow);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        z-index: 1;
+        margin-top: 5vh;
+        margin-bottom: -.5vh;
     }
-    h2 {
+    .title-name-false {
+        // border: 1px solid black;
         font-family: 'Spartan', sans-serif;
+        background: linear-gradient($greyBlueLeaf1, $greyBlueLeaf1, $offWhite);
+        // background: linear-gradient(rgb(143, 27, 27), yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        z-index: 1;
+        margin-top: 5vh;
+        margin-bottom: -.5vh;
+    }
+    svg {
+        height: 100%;
+        width: 100%;
+    }
+    .title-title-true {
+        margin-top: 1vh;
+        // border: 1px solid black;
+        font-family: 'Spartan', sans-serif;
+        z-index: 2;
+    }
+    .title-title-false {
+        margin-top: 1vh;
+        color: $greyBlueLeaf1;
+        font-family: 'Spartan', sans-serif;
+        z-index: 2;
     }
 }
 
@@ -28,7 +57,7 @@
     .title-container {
         font-size: 3vh;
         h2 {
-            margin-top: 5px;
+            // margin-top: 5px;
             font-size: 3vh;
         }
     }

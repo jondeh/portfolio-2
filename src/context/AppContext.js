@@ -4,6 +4,7 @@ export const AppContext = createContext(null)
 
 export const AppProvider = ({ children }) => {
   const [isLight, setIsLight] = useState(true);
+
   console.log("context", isLight)
 
   return (
