@@ -51,7 +51,7 @@ const Project = ({ project }) => {
                 </p>
             </div>
             <div className="project-techs">
-                <h4>Technologies</h4>
+                <h4 style={{background: isLight ? null : "transparent", color: isLight ? null : "white"}}>Technologies</h4>
                 <div className="p-techs">
                 {techs.map((tech, techID) => {
                     return <ul key={techID} style={{color: isLight ? null : "white"}}>{tech}</ul>
