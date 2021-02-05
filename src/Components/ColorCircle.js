@@ -54,4 +54,4 @@ const ColorCircle = () => {
     )
 }
 
-export default ColorCircle;
+// export default ColorCircle;

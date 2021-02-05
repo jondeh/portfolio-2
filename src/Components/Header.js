@@ -41,10 +41,10 @@ const Header = () => {
         setIsMenuToggle(false)
     }
     
-    const handleButtonResume = () => {
-        push('/resume')
-        setIsMenuToggle(false)
-    }
+    // const handleButtonResume = () => {
+    //     push('/resume')
+    //     setIsMenuToggle(false)
+    // }
     
     const handleButtonContact = () => {
         push('/contact')

@@ -18,7 +18,7 @@ import {AppContext} from '../context/AppContext';
 
 const Skills = () => {
     const {isLight} = useContext(AppContext);
-    const iconColor = isLight ? null : "white"
+    const iconColor = isLight ? null : "white";
     return (
         <div className="skills-container" style={{background: isLight ? "white" : "black"}}>
             <div className="skills-header"><h2>Skills</h2></div>

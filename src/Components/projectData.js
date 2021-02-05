@@ -17,7 +17,7 @@ import vin8 from '../img/vindermere/vindermere-items.png';
 import vin9 from '../img/vindermere/vindermere-market.png';
 
 import guitar1 from '../img/chordFinder/guitar1.png';
-import guitar2 from '../img/chordFinder/guitar2.png';
+// import guitar2 from '../img/chordFinder/guitar2.png';
 import guitar3 from '../img/chordFinder/guitar3.png';
 import guitar4 from '../img/chordFinder/guitar4.png';
 import guitar5 from '../img/chordFinder/guitar5.png';
@@ -37,31 +37,31 @@ import pv4 from '../img/pathfindingVisualizer/pathfinding-visualizer-portfolio-4
 import pv5 from '../img/pathfindingVisualizer/pathfinding-visualizer-portfolio-5.png';
 import pv6 from '../img/pathfindingVisualizer/pathfinding-visualizer-portfolio-6.png';
 
-import { SiJavascript } from 'react-icons/si';
-import { AiFillHtml5 } from 'react-icons/ai';
+// import { SiJavascript } from 'react-icons/si';
+// import { AiFillHtml5 } from 'react-icons/ai';
 import { FaReact } from 'react-icons/fa';
 import { DiCss3 } from 'react-icons/di';
 import { SiPostgresql } from 'react-icons/si';
 import { GrNode } from 'react-icons/gr';
-import { AiFillGithub } from 'react-icons/ai';
-import { ImGit } from 'react-icons/im';
-import { FaPython } from 'react-icons/fa';
-import { SiGreensock } from 'react-icons/si';
+// import { AiFillGithub } from 'react-icons/ai';
+// import { ImGit } from 'react-icons/im';
+// import { FaPython } from 'react-icons/fa';
+// import { SiGreensock } from 'react-icons/si';
 import { SiMongodb } from 'react-icons/si';
-import { SiAdobephotoshop } from 'react-icons/si';
+// import { SiAdobephotoshop } from 'react-icons/si';
 
-let JAVASCRIPT = <SiJavascript className="project-icon" />
-let HTML = <AiFillHtml5 className="project-icon" />
+// let JAVASCRIPT = <SiJavascript className="project-icon" />
+// let HTML = <AiFillHtml5 className="project-icon" />
 let REACT = <FaReact className="project-icon" />
 let CSS = <DiCss3 className="project-icon" />
 let SQL = <SiPostgresql className="project-icon" />
 let NODE = <GrNode className="project-icon" />
-let GITHUB = <AiFillGithub className="project-icon" />
-let GIT = <ImGit className="project-icon" />
-let PYTHON = <FaPython className="project-icon" />
-let GREENSOCK = <SiGreensock className="project-icon" />
+// let GITHUB = <AiFillGithub className="project-icon" />
+// let GIT = <ImGit className="project-icon" />
+// let PYTHON = <FaPython className="project-icon" />
+// let GREENSOCK = <SiGreensock className="project-icon" />
 let MONGO = <SiMongodb className="project-icon" />
-let PHOTOSHOP = <SiMongodb className="project-icon" />
+// let PHOTOSHOP = <SiMongodb className="project-icon" />
 
 export const projects = [
     {

@@ -17,7 +17,7 @@ const StyledSVG = styled(ImportedComponent)`
     height: 30em;`
 
 const DeskMan = () => {
-    const {isLight, setIsLight} = useContext(AppContext);
+    const {isLight} = useContext(AppContext);
 
     useEffect(() => {
         console.log("stars", stars)
@@ -52,10 +52,6 @@ const DeskMan = () => {
         // let head = document.getElementById('head')
         // head.style.fill = "rgb(20, 20, 20)"
     }, [isLight])
-
-    const handleMode = () => {
-        
-    }
 
     return (
         <div className="desk-man-container">

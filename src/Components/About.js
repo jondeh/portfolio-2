@@ -1,19 +1,19 @@
-import React, {useState, useEffect, useContext} from 'react';
+import React, {useContext} from 'react';
 import '../SCSS/About.scss';
 import {AppContext} from '../context/AppContext';
 
-import ColorCircle from './ColorCircle';
+// import ColorCircle from './ColorCircle';
 
-const random = () => {
-    return Math.floor(Math.random() * 169)
-}
+// const random = () => {
+//     return Math.floor(Math.random() * 169)
+// }
 
 const Bio = () => {
     const {isLight} = useContext(AppContext);
 
-const colorStyle = {
-    background: `linear-gradient(${`rgb(${random()},${random()},${random()})`}, ${`rgb(${random()},${random()},${random()})`})`
-}
+// const colorStyle = {
+//     background: `linear-gradient(${`rgb(${random()},${random()},${random()})`}, ${`rgb(${random()},${random()},${random()})`})`
+// }
 
     return (
         <div className="bio-container" style={{background: isLight ? "white" : "black"}}>
