@@ -19,7 +19,7 @@
 .header-initials-true {
     height: 18px;
     width: 18px;
-    background: url('../img/initials/signature-initials.png');
+    background: url('../img/signature/black-signature.png'); 
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -28,7 +28,7 @@
 .header-initials-false {
     height: 18px;
     width: 18px;
-    background: url('../img/initials/signature-initials-inverted.png');
+    background: url('../img/signature/white-signature.png'); 
     background-size: 100%;
     background-position: center;
 }
@@ -58,14 +58,16 @@
 }
 
 .lightMode-image {
-    background-image: url('../img/lightDarkMode/lightMode.png');
+    background: url('../img/lightDarkMode/lightMode.png');
     background-size: 110%; 
     background-position: center;
+    background-repeat: no-repeat;
 }
 .darkMode-image {
-    background-image: url('../img/lightDarkMode/darkMode.png');
+    background: url('../img/lightDarkMode/darkMode.png');
     background-size: 90%; 
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 .menu-icon {
