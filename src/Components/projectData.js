@@ -76,7 +76,7 @@ export const projects = [
     {
         title: "Go",
         url: "",
-        github: "",
+        github: "https://github.com/jondeh/go",
         images: [go1, go2, go3, go4],
         technologies: [REACT, NODE, CSS],
         techs: ["ReactJS", "Node.js", "HTML", "CSS", "Express", "Massive"],
