@@ -27,19 +27,21 @@ const Project = ({ project }) => {
         setPicNum(picNum + math)
     }
 
+    const iconColor = isLight ? "black" : "white"
+
     return (
         <div className="project-container" style={{background: isLight ? null : "rgb(37, 37, 37)"}}>
             <div className="project-title" style={{color: isLight ? null : "white"}}>
                 <h2>{title}</h2>
                 <a href={github}>
-                    <AiFillGithub className="project-icon" color="black" />
+                    <AiFillGithub className="project-icon" color={iconColor} />
                 </a>
             </div>
             <div className="project-img" style={{backgroundImage: `url(${images[picNum]})`}} alt={title + " Image"}>
                 <div  onClick={() => handlePicClick(-1)}className="overlay"><Left /></div>
                 <div  onClick={() => handlePicClick(+1)}className="overlay"><Right /></div>
             </div>
-            <div className="project-tech-icons">
+            <div className="project-tech-icons" style={{color: isLight ? null : "#cfcccc"}}>
                 {technologies}
             </div>
 
