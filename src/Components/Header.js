@@ -61,7 +61,7 @@ const Header = () => {
                 className={`${isLight ? "lightMode" : "darkMode" }-image`}>
             </div>
         </div>
-            <ImMenu className="menu-icon" onClick={handleMenuToggle} />
+            <ImMenu className="menu-icon" onClick={handleMenuToggle} color={isLight ? "black" : "white"}/>
             <div className="web-menu">
                 <button style={buttonStyle} onClick={handleButtonAbout}>ABOUT</button>
                 <button style={buttonStyle} onClick={handleButtonSkills}>SKILLS</button>
@@ -70,7 +70,7 @@ const Header = () => {
                 <button style={buttonStyle} onClick={handleButtonContact}>CONTACT</button>
             </div>
             {
-                isMenuToggle && <div className="mobile-menu">
+                isMenuToggle && <div className="mobile-menu" style={{background: isLight ? "rgba(255, 255, 255, 0.88)" : "black"}}>
                 <button style={buttonStyle} onClick={handleButtonAbout}>ABOUT</button>
                 <button style={buttonStyle} onClick={handleButtonSkills}>SKILLS</button>
                 <button style={buttonStyle} onClick={handleButtonPortfolio}>PROJECTS</button>

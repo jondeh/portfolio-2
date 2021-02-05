@@ -1,27 +1,45 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import '../SCSS/About.scss';
+import {AppContext} from '../context/AppContext';
+
+import ColorCircle from './ColorCircle';
+
+const random = () => {
+    return Math.floor(Math.random() * 169)
+}
 
 const Bio = () => {
+    const {isLight} = useContext(AppContext);
+
+const colorStyle = {
+    background: `linear-gradient(${`rgb(${random()},${random()},${random()})`}, ${`rgb(${random()},${random()},${random()})`})`
+}
+
     return (
-        <div className="bio-container">
-            <div className="bio-img-container"></div>
-            <div className="bio-summary-container">
+        <div className="bio-container" style={{background: isLight ? "white" : "black"}}>
+            <div className="bio-summary" style={{color: isLight ? "black" : "white"}}>
                 <p>
-                    <span>Hello World!</span>
+                    <span>Hello World! <b>My name is Jon Dehlin.</b>  </span>
                     <br/>
                     <br/>
-                    <span>My name is Jon Dehlin.  I am a full-stack web developer who specializes in creating responsive websites, from the database to the front-end animations.
+                    <span>
+                        I am a <b>full-stack</b> web developer who specializes in creating <b>responsive</b> websites, from the database to the front-end animations.
+                    </span>
                     <br/>
                     <br/>
-                    I write clean code that is scalable and easy to maintain, and work best when surrounded by motivated people who just want to build things and solve problems.
+                    <span>
+                        I write <b>clean code</b> that is scalable and easy to maintain, and work best when surrounded by motivated people who just want to build things and <b>solve problems.</b>
+                    </span>
                     <br/>
                     <br/>
-                    Feel free to go over to the projects tab and look at some of my work.  Each one has a link to the github repo.
+                    <span>
+                        Feel free to go over to the projects tab and look at some of my work.  Each one has a link to the github repo.
+                    </span>
                     <br/>
                     <br/>
-                    </span>  
                 </p>
             </div>
+            
         </div>
     )
 }

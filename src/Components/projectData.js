@@ -79,7 +79,7 @@ export const projects = [
         github: "",
         images: [go1, go2, go3, go4],
         technologies: [REACT, NODE, CSS],
-        techs: [],
+        techs: ["ReactJS", "Node.js", "HTML", "CSS", "Express", "Massive"],
         description: "Complete digital version of the ancient board game Go.  Alternate placing stones on a 19x19 crosshatch board.  Completely surrounding an opponent's stone(s) will remove that stone from the board.  Win by surrounding more of the crosshatches than the opposing player.  Game ends when both players 'pass' a turn.  This version has all of the rules.  The most challenging rule to implement was the rule of 'ko', which states that if you take an opponent's stone, they can't take your stone immediately back if it would result in an identical state of the board as that which was instanced when you took their stone.  I solved this by storing as an array the coordinates of any single stone that is taken.  That array is referenced as an illegal move for one turn, after which it disappears.",
         
     },

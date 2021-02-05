@@ -1,31 +1,19 @@
 @import './Variables.scss';
 
 .bio-container {
-    padding-top: 8vh;
+    padding-top: 5vh;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
 }
 
-.bio-img-container {
-    height: 50vh;
-    width: 50vh;
-    margin-bottom: 3vh;
-    background: url('../img/proPic/Profile_Pic.JPG');
-    background-size: 100%;
-    background-position: center;
-    border-radius: 50%;
-}
-
-.bio-summary-container {
-    width: 100%;
-    text-align: left;
-    padding: 1vh;
-    font-size: 21px;
+.bio-summary {
+    padding: .5vh;
     // border: 1px solid black;
 }
+
 
 @media only screen and (min-width: 768px) {
     .bio-container {
@@ -33,11 +21,8 @@
         justify-content: space-evenly;
         font-size: 28px;
     }
-    .bio-img-container {
-        height: 400px;
-        width: 400px;
-    }
-    .bio-summary-container {
+
+    .bio-summary {
         width: 50%;
     }
 }

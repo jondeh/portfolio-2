@@ -1,0 +1,35 @@
+.circle-container {
+    border: 1px solid black;
+    height: 30%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: blue;
+    background: white;
+    // font-family: 'Spartan', sans-serif;
+    padding: 3vh;
+    h1 {
+        font-family: 'Spartan', sans-serif;
+        // background: linear-gradient($purpleShadow1, $otherBlue);
+        background: linear-gradient(rgb(143, 27, 27), yellow);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    h2 {
+        font-family: 'Spartan', sans-serif;
+    }
+}
+
+// @media only screen and (min-width: 1050px) {
+//     .title-container {
+//         font-size: 3vh;
+//         h2 {
+//             margin-top: 5px;
+//             font-size: 3vh;
+//         }
+//     }
+    
+// }
+
